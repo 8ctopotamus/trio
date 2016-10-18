@@ -1,7 +1,7 @@
 title: Krause Funeral Home
 author: Trio Engineering
-cover_index: /assets/krause-thumb.jpg
-cover_detail: /assets/krause-cover.jpg
+cover_index: /trio/assets/krause-thumb.jpg
+cover_detail: /trio/assets/krause-cover.jpg
 tags: []
 categories: []
 date: 2016-10-14 08:51:00

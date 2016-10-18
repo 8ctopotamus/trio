@@ -1,7 +1,7 @@
 ---
 title: Weyerhaven Subdivision
-cover_index: /assets/wayerhaven-thumb.jpg
-cover_detail: /assets/wayerhaven-cover.jpg
+cover_index: /trio/assets/wayerhaven-thumb.jpg
+cover_detail: /trio/assets/wayerhaven-cover.jpg
 author: Trio Engineering
 tags:
 categories: []

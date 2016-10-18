@@ -1,9 +1,9 @@
 # Header
 menu:
-  VISION: /vision
-  DESIGN: /design
-  EXECUTION: /execution
-  REALIZATION: /realization
+  VISION: /Vision
+  DESIGN: /Design
+  EXECUTION: /Execution
+  REALIZATION: /Realization
 
 # Default post title
 default_post_title: Untitled

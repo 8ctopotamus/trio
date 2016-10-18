@@ -1,7 +1,7 @@
 title: The Glen of Brookfield
 author: Trio Engineering
-cover_index: /assets/glen-brookfield-thumb.jpg
-cover_detail: /assets/glen-brookfield-cover.jpg
+cover_index: /trio/assets/glen-brookfield-thumb.jpg
+cover_detail: /trio/assets/glen-brookfield-cover.jpg
 date: 2016-10-17 12:23:46
 tags:
 ---
