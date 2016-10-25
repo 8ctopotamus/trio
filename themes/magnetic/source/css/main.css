@@ -1569,3 +1569,31 @@ figure.highlight.yml .number,
 .codeblock.yml .number {
     color: #0086b3;
 }
+
+
+/* Custom CSS */
+
+#homepage-cta {
+  background: rgba(0, 0, 0, 0.8);
+  padding: 25px;
+  width: 60%;
+  font-size: 2em;
+  position: absolute;
+  bottom: 25px;
+  z-index: 100;
+  color: #fff;
+  font-family: "raleway-regular", arial;
+}
+
+#homepage-slider {
+  background-color: #a3a60f;
+}
+
+.slick-slide {
+  display: block;
+  height: 100vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: .4;
+}

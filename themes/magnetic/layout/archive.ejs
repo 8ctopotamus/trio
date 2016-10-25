@@ -22,7 +22,16 @@
 %>
 
 <section class="main clearfix">
-    <section class="wrapper">
+    <p class="lead">LIVE it. Our portfolio includes small to large scale planned neighborhoods, low to high density multi-family residential and condominium projects, business and commercial developments, schools, churches, hospitals and a variety of redevelopment projects. Review our portfolio. Then imagine what we can do for you.</p>
+
+    <p class="indigo">Include static image (photo or rendering) collage of highlighted projects (similar to www.tkwa.com). Click each image to bring up a project specific page with a brief narrative of the project and the role we played.</p>
+
+    <% page.posts.each(function(item){ %>
+        <%- partial('_partial/article-index', {item: item}) %>
+    <% }); %>
+    <%- partial('_partial/pagination') %>
+
+    <!-- <section class="wrapper">
         <div class="content archives">
             <% if(title) { %>
                 <div class="archive-title"><%- title %></div>
@@ -32,8 +41,6 @@
                     <%- partial('_partial/article-archive', {item: item}) %>
                 <% }); %>
             </ul>
-        </div><!-- end content -->
-    </section>
+        </div>
+    </section> -->
 </section><!-- end main -->
-
-
