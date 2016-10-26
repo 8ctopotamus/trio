@@ -75,7 +75,10 @@ $(document).ready(function(){
 
     $('#homepage-slider').slick({
       autoplay: true,
-      autoplaySpeed: 3500
+      autoplaySpeed: 4500
     })
+
+
+    $(".before-after").twentytwenty();
 
 });
