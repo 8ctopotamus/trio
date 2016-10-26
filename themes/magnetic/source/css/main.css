@@ -20,8 +20,6 @@
 
 */
 
-
-
 /*  Fonts  */
 @font-face {
     font-family: 'raleway-regular';
@@ -1573,16 +1571,25 @@ figure.highlight.yml .number,
 
 /* Custom CSS */
 
-#homepage-cta {
+.homepage-cta {
   background: rgba(0, 0, 0, 0.8);
+  font-weight: 100;
   padding: 25px;
-  width: 60%;
-  font-size: 2em;
+  width: 70%;
+  font-size: 1.8em;
   position: absolute;
   bottom: 25px;
   z-index: 100;
   color: #fff;
   font-family: "raleway-regular", arial;
+  box-shadow: 1px 1px 12px black;
+}
+
+.homepage-cta .drop-cap {
+  float: left;
+  font-size: 2.5em;
+  margin-right: 15px;
+  margin-bottom: 10px;
 }
 
 #homepage-slider {
@@ -1590,10 +1597,35 @@ figure.highlight.yml .number,
 }
 
 .slick-slide {
-  display: block;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
   height: 100vh;
   width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
-  opacity: .4;
+  background-color: #a3a60f;
+  background-blend-mode: multiply;
+}
+
+.slick-slide h3 {
+  color: #fff;
+  padding: 100px;
+  font-size: 2em;
+  z-index: 1000;
+  background: rgba(0, 0, 0, .4);
+}
+
+.slick-prev {left: 25px; z-index: 1000}
+.slick-next {right: 45px;}
+
+.slick-prev:before,
+.slick-next:before {
+  font-size: 40px;
+  opacity: .35;
+}
+
+.lead {
+  font-size: 1.6em !important;
+  line-height: 1.4em !important;
 }
