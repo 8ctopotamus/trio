@@ -1,26 +1,141 @@
-/*
 
-    Template Author : pixelhint.com
-    Author Email    : contact@pixelhint.com
-    Template Name   : Magnetic
+/* Custom CSS */
+.homepage-flex-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding-right: 300px;
+  height: 100%;
 
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  pointer-events: none;
+}
 
-    *****************************************
+.homepage-flex-container h2 {
+  display: block;
+  margin: 0 auto;
+  width: 75%;
+  height: auto;
+  max-height: 75%;
+  color: #fff;
+  font-size: 1.7em;
+  line-height: 1.7em;
+  background: rgba(0,0,0,.5);
+  padding: 10px;
+}
 
+.slick-slide {
+  display: block;
+  height: 100vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #a3a60f;
+  background-blend-mode: multiply;
+}
 
-    - Fonts
-    - General CSS
-    - Header
-    - Home/portfolio
-    - Inner page
-    - Map/Contact page
-    - Tooltip
-    - Responsive code
+.slick-prev {left: 25px; z-index: 1000}
+.slick-next {right: 45px; z-index: 1000}
 
+.slick-prev:before,
+.slick-next:before {
+  font-size: 40px;
+  opacity: .35;
+}
 
-*/
+.lead {
+  font-size: 1.6em !important;
+  line-height: 1.4em !important;
+}
 
-/*  Fonts  */
+.grid-container {
+    width: 100%;
+    max-width: 1200px;
+}
+/*-- cleafix hack -- */
+.row:before,
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+[class*='col-'] {
+    float: left;
+    min-height: 1px;
+    width: 16.66%;
+    padding: 16px;
+}
+.col-1 {
+    width: 16.66%;
+}
+.col-2 { width: 33.33%; }
+.col-3 { width: 40%; }
+.col-4 { width: 66.66%; }
+.col-5 { width: 83.33%; }
+.col-6 { width: 100%; }
+
+@media all and (max-width: 800px) {
+    .col-1 {
+        width: 33.33%;
+    }
+    .col-2 {
+        width: 50%;
+    }
+    .col-3 {
+        width: 83.33%;
+    }
+    .col-4 {
+        width: 100%;
+    }
+    .col-5 {
+        width: 100%;
+    }
+    .col-6 {
+        width: 100%;
+    }
+    .row .col-2:last-of-type {
+        width: 100%;
+    }
+    .row .col-5 ~ .col-1 {
+        width: 100%;
+    }
+}
+@media all and (max-width: 650px) {
+    .homepage-flex-container h2 {
+      width: 70%;
+      font-size: 1.4em;
+    }
+
+    .col-1 {
+        width: 50%;
+    }
+    .col-2 {
+        width: 100%;
+    }
+    .col-3 {
+        width: 100%;
+    }
+    .col-4 {
+        width: 100%;
+    }
+    .col-5 {
+        width: 100%;
+    }
+    .col-6 {
+        width: 100%;
+    }
+}
+
 @font-face {
     font-family: 'raleway-regular';
     src: url('../fonts/raleway-regular.eot');
@@ -114,9 +229,9 @@ h5, h6          { font-weight: bolder }
         position: fixed;
         top: 0;
         right: 0;
-        width: 250px;
+        width: 275px;
         min-height: 100%;
-        padding: 0 0 0 50px;
+        padding: 0 0 0 25px;
         background: #ffffff;
         background-image: url(../img/trio-contour.svg);
         background-size: cover;
@@ -128,7 +243,7 @@ h5, h6          { font-weight: bolder }
     header .brand-logo {
       display:block;
       margin-top: 25px;
-      width: 200px;
+      width: 250px;
       height: auto;
     }
 
@@ -166,7 +281,7 @@ h5, h6          { font-weight: bolder }
     header nav ul li a{
         color: #454545;
         font-family: "raleway-regular", arial;
-        font-size: 14px;
+        font-size: 18px;
         text-decoration: none;
         letter-spacing: 1px;
     }
@@ -631,6 +746,8 @@ h5, h6          { font-weight: bolder }
 
 /*  Responsive code  */
 @media (max-width:1099px){
+
+    .homepage-flex-container {padding: 0;}
 
     header{
         display: block;
@@ -1566,66 +1683,4 @@ figure.highlight.yml .meta,
 figure.highlight.yml .number,
 .codeblock.yml .number {
     color: #0086b3;
-}
-
-
-/* Custom CSS */
-
-.homepage-cta {
-  background: rgba(0, 0, 0, 0.8);
-  font-weight: 100;
-  padding: 25px;
-  width: 70%;
-  font-size: 1.8em;
-  position: absolute;
-  bottom: 25px;
-  z-index: 100;
-  color: #fff;
-  font-family: "raleway-regular", arial;
-  box-shadow: 1px 1px 12px black;
-}
-
-.homepage-cta .drop-cap {
-  float: left;
-  font-size: 2.5em;
-  margin-right: 15px;
-  margin-bottom: 10px;
-}
-
-#homepage-slider {
-  background-color: #a3a60f;
-}
-
-.slick-slide {
-  display: flex !important;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  width: 100%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: #a3a60f;
-  background-blend-mode: multiply;
-}
-
-.slick-slide h3 {
-  color: #fff;
-  padding: 100px;
-  font-size: 2em;
-  z-index: 1000;
-  background: rgba(0, 0, 0, .4);
-}
-
-.slick-prev {left: 25px; z-index: 1000}
-.slick-next {right: 45px;}
-
-.slick-prev:before,
-.slick-next:before {
-  font-size: 40px;
-  opacity: .35;
-}
-
-.lead {
-  font-size: 1.6em !important;
-  line-height: 1.4em !important;
 }
