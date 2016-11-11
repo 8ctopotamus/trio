@@ -1,4 +1,3 @@
-
 /* Custom CSS */
 .homepage-flex-container {
   position: absolute;
@@ -115,6 +114,9 @@
       width: 70%;
       font-size: 1.4em;
     }
+
+    .slick-prev,
+    .slick-next {display: none !important;}
 
     .col-1 {
         width: 50%;
